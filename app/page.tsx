@@ -3,6 +3,8 @@ import React from 'react'
 import FormFill from './components/FormFill'
 import ElementWrapper from './components/ElementWrapper'
 import Button ,{primaryButtonProps , secondaryButtonProps} from './components/Button';
+import Mycontext from '@/context/Mycontext';
+import MyContent from './components/MyContent';
 
 const page = () => {
   return (
@@ -23,8 +25,15 @@ const page = () => {
   </ElementWrapper> */}
   
 
-<Button {...primaryButtonProps} type="primary" label={primaryButtonProps.lable}/>
+{/* <Button {...primaryButtonProps} type="primary" label={primaryButtonProps.lable}/>
 <Button  {...secondaryButtonProps} type='secondary' label={secondaryButtonProps.lable}/>
+ */}
+
+
+
+
+
+<MyContent/>
   </>
 )
 }
